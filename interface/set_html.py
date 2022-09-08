@@ -132,7 +132,7 @@ def set_table(name, data):
     'border-color': '#000',
     'border-width': '1px',
     'border-style': 'solid',
-    'padding': None,
+    'padding': '2px',
   })
 
 
@@ -147,12 +147,36 @@ def set_table(name, data):
   file.write(html)
 
 
+def set_vt(variables_dict):
+  t_t = '''
+  <br>
+        <p style="font-size:20px;">实例参数</p>
+        <table class="table-striped table-hover"
+               style="border-collapse:collapse;word-break:keep-all;white-space:nowrap;font-size:14px;"  cellspacing="0" cellpadding="0">
+  '''
+
+  for k,v in variables_dict.items():
+
+    t = '''
+    <tr>
+            <td class="column" style="border-color:#000;border-width:1px;border-style:solid;padding:2px;  color:#fff;background-color:#48a6fb; ">%s</td>
+            <td style="border-color:#000;border-width:1px;border-style:solid;padding:2px;">%s</td>
+        </tr>
+    ''' %(k, v)
+    t_t += t
+
+  t_t += '</table>'
+  file.write(t_t)
+
+
 def set_tail():
   file_tail = '''
       </div>
   </div>
+  <br>
+  <br>
   </body>
-
+  </html>
   '''
   file.write(file_tail)
 

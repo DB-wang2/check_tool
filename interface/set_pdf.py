@@ -1,3 +1,5 @@
+# 已废弃
+
 from reportlab.pdfbase import pdfmetrics  # 注册字体
 from reportlab.pdfbase.ttfonts import TTFont  # 字体类
 from reportlab.platypus import Table, SimpleDocTemplate, Paragraph, Image, Spacer  # 报告内容相关类
