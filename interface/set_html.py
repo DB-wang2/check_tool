@@ -45,7 +45,7 @@ else:
     #         os.mkdir(fileDay
 
 
-file_name = fileMonth + '/%s.html' % localtime
+file_name = fileMonth + '/%s数据库巡检报告.html' % localtime
 print(file_name)
 file = open(file_name, 'w')
 

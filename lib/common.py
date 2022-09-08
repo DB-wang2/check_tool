@@ -7,9 +7,9 @@ from conf import setting
 def mysql_conn(host, db):
     conn = pymysql.connect(
         host=host,
-        port=3306,
-        user='root',
-        password='rDNZn23zAINAINu',
+        port=setting.user_dict['port'],
+        user=setting.user_dict['username'],
+        password=setting.user_dict['passwd'],
         db=db,
         charset='utf8',
         autocommit=True

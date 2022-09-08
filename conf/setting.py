@@ -3,6 +3,14 @@ import os
 PATH_BASE=os.path.dirname(os.path.dirname(__file__))
 USER_PATH_BASE=os.path.join(PATH_BASE,'db','user_data')
 
+
+# 配置用来访问mysql的用户、密码、端口
+user_dict = {
+    'username':'root',
+    'passwd':'rDNZn23zAINAINu',
+    'port':3306,
+
+}
 # 配置需要检查的数据库名字与地址
 database_dic = {
     'test9': 'eks-mysql.test9.bitget.tools',
