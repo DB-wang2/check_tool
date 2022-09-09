@@ -43,7 +43,7 @@ def run():
                         data.append(l1)
                     set_html.set_table(l['check_name'], data)
                 else:
-                    mysql_logger.error('未获取到值，请检查！')
+                    mysql_logger.info('未获取到值，请检查！')
                     data = [l['table_head']]
                     set_html.set_table(l['check_name'], data)
 
