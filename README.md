@@ -25,7 +25,7 @@ user_dict = {
 配置需要检查的数据库名字与地址
 database_dic = {
     'test1': '192.168.1.110',
-    'test2': 'mysql.test1.com'
+    'test2': 'mysql.test2.com'
 }
 ```
 

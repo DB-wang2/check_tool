@@ -7,14 +7,14 @@ USER_PATH_BASE=os.path.join(PATH_BASE,'db','user_data')
 # 配置用来访问mysql的用户、密码、端口
 user_dict = {
     'username':'root',
-    'passwd':'rDNZn23zAINAINu',
+    'passwd':'123456',
     'port':3306,
 
 }
 # 配置需要检查的数据库名字与地址
 database_dic = {
-    'test9': 'eks-mysql.test9.bitget.tools',
-    'test5': 'eks-mysql.test5.bitget.tools'
+    'test1': '192.168.1.110',
+    'test2': 'mysql.test2.com'
 }
 
 
