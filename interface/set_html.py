@@ -26,7 +26,7 @@ month = time.strftime('%m', time.localtime(time.time()))
 # 日期
 day = time.strftime('%d', time.localtime(time.time()))
 # 具体时间 小时分钟秒
-mdhms = time.strftime('%Y-%m-%d %H:%m:%S', time.localtime(time.time()))
+mdhms = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
 
 fileYear = file_path + '/' + year
 fileMonth = fileYear + '/' + month
